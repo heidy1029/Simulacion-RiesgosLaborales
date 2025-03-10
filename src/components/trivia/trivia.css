@@ -1,0 +1,65 @@
+.questionWrapperBody .tag-container, .questionWrapperBody div:first-child, .questionBtnContainer{display: none !important;}
+.questionWrapperBody .question{
+	/*
+		bg-verdeLimon rounded-2xl py-4
+		text-black uppercase text-lg font-semibold text-center
+	*/
+	text-align: center;
+	font-size: 18px;
+	color: #312B6B;
+	text-wrap: balance;
+	margin-bottom: 30px;
+}
+
+/*bg-white rounded-3xl text-backgroundAzulOscuro uppercase text-xl text-center font-bold py-3*/
+.questionWrapperBody .answerBtn.btn, .btnQuestion{
+	background-color: #EAEAEC;
+	border-radius: 15px !important;
+	color: #312B6B;
+	text-transform: uppercase;
+	font-size: 18px !important;
+	text-align: center !important;
+	font-weight: 500;
+	border: 0 !important;
+	margin-bottom: 15px !important;
+}
+.questionWrapperBody .answerBtn.btn:hover{
+	animation: bounce 0.6s ease 2;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1); /* Tamaño inicial */
+  }
+  30% {
+    transform: scale(1.03); /* Primer rebote */
+  }
+  50% {
+    transform: scale(0.9); /* Rebote hacia adentro */
+  }
+  70% {
+    transform: scale(1.01); /* Segundo rebote */
+  }
+  100% {
+    transform: scale(1); /* Vuelve al tamaño original */
+  }
+}
+
+.questionWrapperBody .questionBtnContainer{
+	/*bg-azulBrillante3 text-black text-lg font-semibold py-3 px-9 rounded-3xl w-1/2 text-center*/
+	justify-content: center;
+}
+.btnQuestion{
+	color: #000;
+	font-size: 17px !important;
+	padding: 10px 35px;
+	border-radius: 25px !important;
+	display: inline-block !important;
+	border:0 !important;
+}
+.btnQuestionBad{background-color: #F1273F;color: white;font-weight: bold;}
+.btnQuestionWinn{background-color: #DBF22E;color: #312B6B;font-weight: bold;}
+.react-quiz-container{
+	margin: 0;
+	width: 100%;
+}
